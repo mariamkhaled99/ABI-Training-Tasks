@@ -1,0 +1,90 @@
+
+
+section {
+    width: 100%;
+    height: 85vh; /* Adjust height as needed */
+    object-fit: cover;
+    background-image: url('../media/house_background.jpeg'); /* Add the background image */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative; /* Ensure positioning context for .login-form */
+}
+
+.room {
+    width: 100%;
+    height: 100%; 
+    position: relative; 
+    z-index: 1; 
+}
+
+.login-form {
+    position: absolute; 
+    top: 50%; 
+    left: 10%; 
+    transform: translateY(-50%); 
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 450px; 
+    box-sizing: border-box; 
+    z-index: 2; 
+}
+
+h3 {
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+.login-button {
+    width: 98%;
+    padding: 1.5rem 2rem;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-link-button{
+    width: 49%;
+    padding: .6rem 1rem;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    font-size: 1rem;
+    margin-top: 1rem;
+
+}
+.platform-logo{
+    padding: 0;
+    margin-right:.2rem;
+   max-width: 15px;
+   max-height: 15px;
+}
+.login-button:disabled {
+    background-color: #0056b3;
+    opacity: 10%;
+    cursor: not-allowed;
+}
